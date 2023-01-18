@@ -23,14 +23,14 @@ const data = [
   { 
       id: 3, 
       image: IMG3,
-      title: 'Figma dashboard Ul kit for data design web app', 
-      github: 'https://github.com',
+      title: 'Movie Rating DataBase Website', 
+      github: 'https://github.com/MuhammedSm/movie-rating-db',
       demo: 'https://dribbble.com/shots/1729o917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps' 
    },{
      id: 4, 
       image: IMG4,
-      title: 'Maintaining tasks and tracking progress',
-      github: 'https://github.com', 
+      title: 'Frontend-Clothing-Website',
+      github: 'https://github.com/MuhammedSm/Clothing-Front-End-Website-main', 
       demo: 'https://dribbble.com/shots/16955822-Maintaining-tasks-and-tracking-progress'
    },{
       id: 5, image: IMG5, 
@@ -65,8 +65,8 @@ function portfolio() {
             </div>
             <h3>{title}</h3>
             <div className="portfolio__item-cta">
-            <a href={github} className='btn'>Github</a>
-            <a href={demo} className='btn btn-primary' target="_blank" rel="noreferrer">Prototype</a>
+            <a href={github} className='btn btn-primary'>Github</a>
+            
             </div>
             </article>
 

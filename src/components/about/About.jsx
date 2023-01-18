@@ -36,7 +36,7 @@ const about = () => {
           </article>
         </div>
         <p>
-                  I am a passionate person, I love learning new things, self learner, hardworking individual, with broad skills and experience in Web and software development
+         I am a passionate person, I love learning new things, self learner, hardworking individual, with broad skills and experience in Web and software development
         </p>
         <a href="#contact" class="btn btn-primary">Let's Talk</a>
       </div>

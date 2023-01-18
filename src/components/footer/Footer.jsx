@@ -6,7 +6,7 @@ function footer() {
   return (
     
     <footer>
-      <a href="#" className='footer__logo'>MSM</a>
+      <a href="#" className='footer__logo'>MCM</a>
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -21,7 +21,7 @@ function footer() {
         <a href="https://facebook.com"> <BsFacebook/></a>
       </div>
       <div className="footer__copyright">
-        <small>&copy;Muhammed seyhmusa.All rights reserved.</small>
+        <small>&copy;Muhammed Cheikh Moussa.All rights reserved.</small>
       </div>
     </footer>
   )
