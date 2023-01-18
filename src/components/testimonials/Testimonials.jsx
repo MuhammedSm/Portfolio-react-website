@@ -3,7 +3,7 @@ import './testimonials.css'
 import AVTR1 from '../../assets/avatar1.jpg'
 import AVTR2 from '../../assets/avatar2.jpg'
 import AVTR3 from '../../assets/avatar3.jpg'
-import AVTR4 from '../../assets/avatar4.jpg'
+
 
 // import Swiper core and required modules
 import {  Pagination } from 'swiper';
@@ -18,32 +18,28 @@ import 'swiper/css/pagination';
 const data =[
   {
       avatar: AVTR1, 
-      name: 'Tina Snow', 
-      review: 'Modi alias animi dolorem aliquam ea eum beatae maiores, consectetur praesentium quibusdam, commodi velit porro blanditiis consequatur qui molestiae. Dolorem, perspiciatis aspernatur labore distinctio ratione delectus voluptatem dolores deserunt explicabo nostrum ducimus quasi?' 
+      name: 'Samir Ghalayini', 
+      review: 'Awsome work, keep up the good work.Looking forward for your upcoming work' 
   }, 
   {
       avatar: AVTR2, 
-      name:'Shatta Wale',
-      review: 'Modi alias animi dolorem aliquam ea eum beatae maiores, consectetur praesentium quibusdam, commodi velit porro blanditiis consequatur qui molestiae. Dolorem, perspiciatis aspernatur labore distinctio ratione delectusvoluptatem dolores deserunt explicabo nostrum ducimus quasi?' 
+      name:'Omar Orfali',
+      review: 'I like the designs, the colors fit so well together making the website come to life ' 
 },
 {
 
       avatar: AVTR3,
-       name: 'Kwame Despite',
-        review: 'Moth alias animi dolorem aliquam ea eum keatae maiores, consectetur praesentium quibusdam, commodi velit porro blanditiis consequatur qui molestiae. Dolorem, perspiciatis aspernatur labore distinctio ratione delectus voluptatem dolores deserunt explicabo nostrum ducimus quasi?' 
+       name: 'Dayan Cheikh Moussa',
+        review: 'I liked the movie rating website, it was clean and easy to use.Keep up the good work' 
 },
-{
- avatar: AVTR4, 
- name: 'Nana Ama McBrown', 
- review: 'Modi alias animi dolorem aliquam ea eum beatae maiores, consectetur praesentium quibusdam, commodi velit porro blanditiis consequatur qui molestiae. Dolorem, perspiciatis aspernatur labore distinctio ratione delectus voluptatem dolores deserunt explicabo nostrum ducimus quasi?' 
-}, 
+
 ]
 
 
 function testimonials() {
   return (
     <section id="testimonials">
-      <h5>Review from clients</h5>
+      <h5>Review and feedback</h5>
       <h2>Testimonials</h2>
       <Swiper className="container testimonials__container" 
        // install Swiper modules
