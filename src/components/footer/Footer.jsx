@@ -2,6 +2,8 @@ import React from 'react'
 import './footer.css'
 import {BsFacebook} from 'react-icons/bs'
 import {FaInstagram} from 'react-icons/fa'
+import {BsLinkedin} from 'react-icons/bs'
+import{FaGithub} from 'react-icons/fa'
 function footer() {
   return (
     
@@ -17,8 +19,9 @@ function footer() {
         <li><a href="#Conacts">Conacts</a></li>
       </ul>
       <div className="footer__socials">
-        <a href="https://www.instagram.com/crispybolt/"><FaInstagram/></a>
-        <a href="https://facebook.com"> <BsFacebook/></a>
+      <a href="https://www.linkedin.com/in/muhammed-%C5%9Feyhmusa-001968211/" target="_blank" rel="noreferrer"><BsLinkedin/></a>
+        <a href="https://github.com/MuhammedSm" target="_blank" rel="noreferrer"><FaGithub/></a>
+        <a href="https://www.instagram.com/crispybolt/" target="_blank" rel="noreferrer"><FaInstagram/></a>
       </div>
       <div className="footer__copyright">
         <small>&copy;Muhammed Cheikh Moussa.All rights reserved.</small>
