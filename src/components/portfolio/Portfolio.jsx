@@ -1,50 +1,44 @@
 import React from 'react'
 import './portfolio.css'
+import IMG0 from '../../assets/portfolio0.jpg'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
 import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
 const data = [
+  {
+    id:0,
+    image:IMG0,
+    title:'React-Portfolio-Website',
+    github:'https://github.com/MuhammedSm/Portfolio-react-website',
+    
+  },
   {
     id:1,
     image:IMG1,
-    title:'Crypto Currency ',
-    github:'https://github.com',
-    demo: 'https://dribbble.com/shots/1658o766-Orion-UI-kit-Charts-templates-infographics-in-Figma'
+    title:'Personal-Voice-Assistant-Java',
+    github:'https://github.com/MuhammedSm/Personal-Voice-Assistant-Java',
+    
   },
   {   id:2, 
       image:IMG2,
-      title: 'Charts templates & infographics in Figma', 
-      github: 'https://github.com', 
-      demo: 'https://dribbble.com/shots/1658o766-Orion-UI-kit-Charts-templates-infographics-in-Figma' 
+      title: 'Vaccination-Clinic-System-Java', 
+      github: 'https://github.com/MuhammedSm/Vaccination-Clinic-System', 
+      
   }, 
   { 
       id: 3, 
       image: IMG3,
       title: 'Movie Rating DataBase Website', 
       github: 'https://github.com/MuhammedSm/movie-rating-db',
-      demo: 'https://dribbble.com/shots/1729o917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps' 
+       
    },{
      id: 4, 
       image: IMG4,
       title: 'Frontend-Clothing-Website',
       github: 'https://github.com/MuhammedSm/Clothing-Front-End-Website-main', 
-      demo: 'https://dribbble.com/shots/16955822-Maintaining-tasks-and-tracking-progress'
-   },{
-      id: 5, image: IMG5, 
-      title: 'Charts templates & infographics in Figma',
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/16541289-Orion-UI-kit-Charts-templates-infographics-in-Figma'
-     },
-       { 
-        id: 6, 
-        image: IMG6,
-        title: 'Charts templates & infographics in Figma',
-        github: 'https://github.com/MuhammedSm', 
-        demo: 'https://dribbble.com/shots/15887665-Orion-U1-kit-Charts-templates-infographics-in-Figma'
-      } ,
+     
+   },
     ]
 
 
