@@ -36,7 +36,7 @@ const about = () => {
           </article>
         </div>
         <p>
-         I am a passionate person, I love learning new things, self learner, hardworking individual, with broad skills and experience in Web and software development
+        As a highly motivated and dedicated individual, I am passionate about continuously learning and expanding my skillset. With a background in web and software development, I possess a broad range of abilities and experiences. I am a self-starter who takes initiative and works hard to complete projects to the best of my abilities.
         </p>
         <a href="#contact" class="btn btn-primary">Let's Talk</a>
       </div>
