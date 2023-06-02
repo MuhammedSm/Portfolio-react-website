@@ -5,12 +5,20 @@ import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
 import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
+import IMG5 from '../../assets/Smile.jpeg'
 const data = [
   {
     id:0,
     image:IMG0,
     title:'React-Portfolio-Website',
     github:'https://github.com/MuhammedSm/Portfolio-react-website',
+    
+  },
+  {
+    id:2,
+    image:IMG5,
+    title:'Smile!(Attendance Taking System Using Facial Recognition)',
+    github:'https://github.com/MuhammedSm/senior-project-Smile---',
     
   },
   {
