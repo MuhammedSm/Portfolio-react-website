@@ -45,7 +45,7 @@ function experience() {
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>Reactjs</h4>
-                <small className='text-light'>Intermidate</small>
+                <small className='text-light'>Experienced</small>
               </div>
             </article>
 

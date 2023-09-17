@@ -47,12 +47,6 @@ const data = [
       title: 'Movie Rating DataBase Website', 
       github: 'https://github.com/MuhammedSm/movie-rating-db',
        
-   },{
-     id: 6, 
-      image: IMG4,
-      title: 'Frontend-Clothing-Website',
-      github: 'https://github.com/MuhammedSm/Clothing-Front-End-Website-main', 
-     
    },
     ]
 
