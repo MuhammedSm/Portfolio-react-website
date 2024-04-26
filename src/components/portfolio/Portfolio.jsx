@@ -7,42 +7,50 @@ import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/Smile.jpeg'
 import IMG6 from '../../assets/chatapp.png'
+import IMGP from '../../assets/image.png'
 const data = [
   {
     id:0,
+    image:IMGP,
+    title:'Future Restaurant',
+    github:'https://github.com/MuhammedSm/restaurant',
+    
+  },
+  {
+    id:1,
     image:IMG0,
     title:'React-Portfolio-Website',
     github:'https://github.com/MuhammedSm/Portfolio-react-website',
     
   },{
-    id:1,
+    id:2,
     image:IMG6,
     title:'Muhammed Chat(Web Chat App)',
     github:'https://github.com/MuhammedSm/React-chat-app',
     
   },
   {
-    id:2,
+    id:3,
     image:IMG5,
     title:'Smile!(Attendance Taking System Using Facial Recognition)',
     github:'https://github.com/MuhammedSm/senior-project-Smile---',
     
   },
   {
-    id:3,
+    id:4,
     image:IMG1,
     title:'Personal-Voice-Assistant-Java',
     github:'https://github.com/MuhammedSm/Personal-Voice-Assistant-Java',
     
   },
-  {   id:4, 
+  {   id:5, 
       image:IMG2,
       title: 'Vaccination-Clinic-System-Java', 
       github: 'https://github.com/MuhammedSm/Vaccination-Clinic-System', 
       
   }, 
   { 
-      id: 5, 
+      id: 6, 
       image: IMG3,
       title: 'Movie Rating DataBase Website', 
       github: 'https://github.com/MuhammedSm/movie-rating-db',
@@ -58,26 +66,36 @@ const data = [
           <h5>My Recent Work</h5>
           <h2>Portfolio</h2>
           <div className="container portfolio__container">
-            {data.map(({ id, image, title, github, demo }) => {
-              return (
-                <article key={id} className="portfolio__item">
-                  <div className="portfolio__item-image">
-                    <img src={image} alt={title} />
-                  </div>
-                  <h3>{title}</h3>
-                  <div className="portfolio__item-cta">
-                    <a href={github} className="btn btn-primary">
-                      Github
-                    </a>
-                    {id === 1 && (
-                      <a href="https://muhammesdseyhmusachatapp.netlify.app" className="btn btn-primary">
-                        Demo
-                      </a>
-                    )}
-                  </div>
-                </article>
-              );
-            })}
+          {data.map(({ id, image, title, github, demo }) => {
+          return (
+            <article key={id} className="portfolio__item">
+              <div className="portfolio__item-image">
+                <img src={image} alt={title} />
+              </div>
+              <h3>{title}</h3>
+              <div className="portfolio__item-cta">
+                <a href={github} className="btn btn-primary">
+                  Github
+                </a>
+                {id === 1 && (
+                  <a href="https://mohammadcheikhmoussa.netlify.app/" className="btn btn-primary">
+                    Demo
+                  </a>
+                )}
+                {id === 2 && (
+                  <a href="https://muhammesdseyhmusachatapp.netlify.app" className="btn btn-primary">
+                    Demo
+                  </a>
+                )}
+                {id === 0 && (
+                  <a href="https://futurerestaurant.netlify.app/" className="btn btn-primary">
+                    Demo
+                  </a>
+                )}
+              </div>
+            </article>
+          );
+        })}
           </div>
         </section>
       );

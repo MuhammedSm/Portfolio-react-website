@@ -22,7 +22,7 @@ function services() {
             </li>
             <li>
               <BsCheck className='service__list-icon'/>
-              <p>Using HTML, JavaScript and CSS to bring concepts to life.</p>
+              <p>Using ReactJs, NextJS, HTML, JavaScript ,Tailwind and CSS to bring concepts to life.</p>
             </li>
             <li>
               <BsCheck className='service__list-icon'/>
