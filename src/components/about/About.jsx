@@ -27,12 +27,12 @@ const about = () => {
           <article className='about__card'>
             <FiUsers className='about__icon'/>
             <h5>Group Projects</h5>
-            <small>3</small>
+            <small>6</small>
           </article>
           <article className='about__card'>
             <BsFolderCheck className='about__icon'/>
             <h5>Projects</h5>
-            <small>5+ Completed</small>
+            <small>15+ Completed</small>
           </article>
         </div>
         <p>
