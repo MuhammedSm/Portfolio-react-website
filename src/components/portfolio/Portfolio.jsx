@@ -1,72 +1,81 @@
-import React from 'react'
-import './portfolio.css'
-import IMG0 from '../../assets/portfolio0.jpg'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/Smile.jpeg'
-import IMG6 from '../../assets/chatapp.png'
-import IMGP from '../../assets/image.png'
+import React from 'react';
+import './portfolio.css';
+import IMGP from '../../assets/image.png';
+import IMGFW from '../../assets/fw.png';
+import IMG0 from '../../assets/portfolio0.jpg';
+import IMG1 from '../../assets/portfolio1.jpg';
+import IMG2 from '../../assets/portfolio2.jpg';
+import IMG3 from '../../assets/portfolio3.jpg';
+import IMG4 from '../../assets/portfolio4.jpg';
+import IMG5 from '../../assets/Smile.jpeg';
+import IMG6 from '../../assets/chatapp.png';
+
 const data = [
   {
-    id:0,
-    image:IMGP,
-    title:'Future Restaurant',
-    github:'https://github.com/MuhammedSm/restaurant',
-    
+    id: 0,
+    image: IMGP,
+    title: 'Future Restaurant',
+    github: 'https://github.com/MuhammedSm/restaurant',
+    demo: 'https://futurerestaurant.netlify.app/'
   },
   {
-    id:1,
-    image:IMG0,
-    title:'React-Portfolio-Website',
-    github:'https://github.com/MuhammedSm/Portfolio-react-website',
-    
-  },{
-    id:2,
-    image:IMG6,
-    title:'Muhammed Chat(Web Chat App)',
-    github:'https://github.com/MuhammedSm/React-chat-app',
-    
+    id: 1,
+    image: IMGFW,
+    title: 'FreeLance Website',
+    github: '',
+    demo: 'https://webcapsule.netlify.app/'
   },
   {
-    id:3,
-    image:IMG5,
-    title:'Smile!(Attendance Taking System Using Facial Recognition)',
-    github:'https://github.com/MuhammedSm/senior-project-Smile---',
-    
+    id: 2,
+    image: IMG0,
+    title: 'React-Portfolio-Website',
+    github: 'https://github.com/MuhammedSm/Portfolio-react-website',
+    demo: 'https://your-portfolio-website-demo-url.com' 
   },
   {
-    id:4,
-    image:IMG1,
-    title:'Personal-Voice-Assistant-Java',
-    github:'https://github.com/MuhammedSm/Personal-Voice-Assistant-Java',
-    
+    id: 3,
+    image: IMG6,
+    title: 'Muhammed Chat(Web Chat App)',
+    github: 'https://github.com/MuhammedSm/React-chat-app',
+    demo: 'https://muhammesdseyhmusachatapp.netlify.app'
   },
-  {   id:5, 
-      image:IMG2,
-      title: 'Vaccination-Clinic-System-Java', 
-      github: 'https://github.com/MuhammedSm/Vaccination-Clinic-System', 
-      
-  }, 
-  { 
-      id: 6, 
-      image: IMG3,
-      title: 'Movie Rating DataBase Website', 
-      github: 'https://github.com/MuhammedSm/movie-rating-db',
-       
-   },
-    ]
+  {
+    id: 4,
+    image: IMG5,
+    title: 'Smile!(Attendance Taking System Using Facial Recognition)',
+    github: 'https://github.com/MuhammedSm/senior-project-Smile---',
+    demo: '' // No demo URL available
+  },
+  {
+    id: 5,
+    image: IMG1,
+    title: 'Personal-Voice-Assistant-Java',
+    github: 'https://github.com/MuhammedSm/Personal-Voice-Assistant-Java',
+    demo: '' // No demo URL available
+  },
+  {
+    id: 6,
+    image: IMG2,
+    title: 'Vaccination-Clinic-System-Java',
+    github: 'https://github.com/MuhammedSm/Vaccination-Clinic-System',
+    demo: '' // No demo URL available
+  },
+  {
+    id: 7,
+    image: IMG3,
+    title: 'Movie Rating DataBase Website',
+    github: 'https://github.com/MuhammedSm/movie-rating-db',
+    demo: '' // No demo URL available
+  },
+];
 
-
-
-    function portfolio() {
-      return (
-        <section id="portfolio">
-          <h5>My Recent Work</h5>
-          <h2>Portfolio</h2>
-          <div className="container portfolio__container">
-          {data.map(({ id, image, title, github, demo }) => {
+function Portfolio() {
+  return (
+    <section id="portfolio">
+      <h5>My Recent Work</h5>
+      <h2>Portfolio</h2>
+      <div className="container portfolio__container">
+        {data.map(({ id, image, title, github, demo }) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
@@ -77,18 +86,8 @@ const data = [
                 <a href={github} className="btn btn-primary">
                   Github
                 </a>
-                {id === 1 && (
-                  <a href="https://mohammadcheikhmoussa.netlify.app/" className="btn btn-primary">
-                    Demo
-                  </a>
-                )}
-                {id === 2 && (
-                  <a href="https://muhammesdseyhmusachatapp.netlify.app" className="btn btn-primary">
-                    Demo
-                  </a>
-                )}
-                {id === 0 && (
-                  <a href="https://futurerestaurant.netlify.app/" className="btn btn-primary">
+                {demo && (
+                  <a href={demo} className="btn btn-primary">
                     Demo
                   </a>
                 )}
@@ -96,10 +95,9 @@ const data = [
             </article>
           );
         })}
-          </div>
-        </section>
-      );
-    }
-    
+      </div>
+    </section>
+  );
+}
 
-export default portfolio
+export default Portfolio;
